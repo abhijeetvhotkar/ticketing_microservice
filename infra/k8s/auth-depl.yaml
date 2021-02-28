@@ -7,14 +7,14 @@ spec:
   selector:
     matchLabels:
       app: auth
-    template:
-      metadata:
-        labels:
-          app: auth
-      spec:
-        containers:
-          - name: auth
-            image: abhijeetvhotkar/auth
+  template:
+    metadata:
+      labels:
+        app: auth
+    spec:
+      containers:
+        - name: auth
+          image: abhijeetvhotkar/auth
 ---
 apiVersion: v1
 kind: Service
